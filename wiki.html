@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Search Bar</title>
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Try Cars, Music, Sports, etc..." onkeyup="searchItems()" onfocus="toggleList(true)" onblur="toggleList(false)">
+    <ul id="itemList" class="hidden">
+      <li>Cars</li>
+      <li>Music</li>
+      <li>Sports</li>
+      <li>Entertainment</li>
+    </ul>
+  </div>
+
+  <script src="wiki.js"></script>
+  <script
+      type="text/javascript"
+      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"
+    ></script>
+</body>
+</html>

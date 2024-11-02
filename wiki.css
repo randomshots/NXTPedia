@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  #searchInput {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #itemList {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    z-index: 10;
+  }
+  
+  #itemList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #itemList li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Hide the list initially */
+  .hidden {
+    display: none;
+  }
+  
